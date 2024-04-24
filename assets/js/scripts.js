@@ -4,7 +4,7 @@
             Fancybox.bind("[data-fancybox]");
             new Swiper(".main-slider",{
 
-
+               loop:true,
                 spaceBetween:20,
                 breakpoints: {
                     1281:{
@@ -34,7 +34,7 @@
                 },
             });
             new Swiper(".brand__swiper",{
-
+                loop:true,
                 grid:{
                     rows:2,
                 },
@@ -47,23 +47,24 @@
                         }
                     },
                     960:{
-                        slidesPerView: 3,
+                        slidesPerView: "auto",
                         grid:{
                             rows:1,
                         }
                     },
                     720:{
-                        slidesPerView: 2,
+                        slidesPerView: "auto",
                         grid:{
                             rows:1,
                         }
                     },
 
                     0:{
-                        slidesPerView: 1,
+
                         grid:{
                             rows:1,
-                        }
+                        },
+                        slidesPerView: "auto",
                     }
                 },
                 navigation: {
@@ -75,7 +76,7 @@
             });
             new Swiper(".maining__images",{
 
-
+                loop:true,
                 slidesPerView: 1,
                 pagination:{
                     el:'.maining__images_pagination'
@@ -84,8 +85,8 @@
 
             });
             new Swiper(".maining__slider",{
-
-
+                loop:true,
+                spaceBetween:20,
                 slidesPerView: 4,
                 breakpoints: {
                     1280:{
@@ -111,8 +112,8 @@
 
             });
             new Swiper(".maining__slider_most-profitable",{
-
-
+                spaceBetween:20,
+                loop:true,
                 slidesPerView: 4,
                 breakpoints: {
                     1280:{
@@ -141,7 +142,7 @@
 
             });
             new Swiper(".case-slider_slider",{
-
+                loop:true,
                spaceBetween:40,
 
                 breakpoints: {
@@ -170,10 +171,12 @@
 
             });
             new Swiper(".reviews-slider",{
+                loop:true,
                 navigation: {
                     nextEl: '.reviews-slider__next',
                     prevEl: '.reviews-slider__prev',
                 },
+                centeredSlidesBounds: true,
                 spaceBetween:16,
                 slidesPerView: 1,
                 breakpoints: {
@@ -182,16 +185,16 @@
                     },
                     768: {
                         slidesPerView: 2,
-                        spaceBetween:6,
+
                     },
                     480: {
                         slidesPerView: 2,
-                        spaceBetween:0
+
 
                     },
                     0: {
                         slidesPerView: 1,
-                        spaceBetween:6
+                        spaceBetween:0,
 
                     }
 
@@ -204,7 +207,7 @@
 
             });
             new Swiper(".awards-slider",{
-
+                loop:true,
                 spaceBetween:40,
 
                 breakpoints: {
@@ -232,16 +235,16 @@
                 },
 
             });
-           var main= new Swiper(".images__main",{
+           const main= new Swiper(".images__main",{
 
                 slidesPerView: 1,
 
 
             });
 
-            var thumb=new Swiper(".thumbs",{
+            const thumb=new Swiper(".thumbs",{
 
-
+                loop:true,
                 centeredSlidesBounds: true,
 
                 spaceBetween: 20,
@@ -279,90 +282,62 @@
     ));
 
 
-var parent = document.querySelectorAll('.parent');
-var parentMobile=document.querySelectorAll('.parent_mobile');
-var drop = document.querySelectorAll('.dropdown-menu');
+const parent = document.querySelectorAll('.parent');
+const parentMobile=document.querySelectorAll('.parent_mobile');
+const drop = document.querySelectorAll('.dropdown-menu');
     parent.forEach(element => element.addEventListener('mouseenter', showChild, false));
     parent.forEach(element => element.addEventListener('mouseleave', hideChild, false));
     drop.forEach(element => element.addEventListener('mouseenter', showDrop, false));
-    drop.forEach(element => element.addEventListener('mouseleave', hideDrop, false));
+   drop.forEach(element => element.addEventListener('mouseleave', hideDrop, false));
     parentMobile.forEach(element => element.addEventListener('click', openMenu, false));
-
+/* Это для меню по ховеру */
 function hideDrop() {
     this.classList.remove("dropdown-menu_active");
     this.parentNode.classList.remove("parent_open");
     this.parentNode.classList.remove("parent_open_drop");
     this.classList.remove("menu-horizont__child-border");
 }
-
 function showDrop() {
     this.parentNode.classList.add("parent_open_drop");
 }
-
 function showChild() {
-    if (this.children.length > 1) {
         this.children[1].classList.add("dropdown-menu_active");
         this.classList.add("parent_open");
         this.parentNode.classList.add("menu-horizont__child-border");
 
-    } else {
-        return false;
-    }
 }
-
 function hideChild() {
     setTimeout(() => this.classList.remove("parent_open"), 1000);
 }
+/**/
+
+/* Для мобильного меню по клику*/
 function openMenu() {
-        event.stopPropagation()
-        this.children[1].classList.toggle("dropdown-menu_active");
-        this.children[1].classList.toggle("border-round");
-        this.children[1].classList.toggle("menu-column__child-border");
-        this.classList.toggle("menu-column__item_open");
-        this.classList.toggle("dropdown-menu__item-border");
+
+        this.classList.toggle("parent_mobile_active");
+    event.stopPropagation();
          }
+/**/
+
+   const answerAccordion = document.querySelectorAll(".accordion-group__accordion");
+
+    answerAccordion.forEach(element => element.addEventListener('click', openAccordion, false));
+
+function openAccordion() {
+    this.classList.toggle("accordion-group__accordion_active");
+}
 
 
-    var answerAccordion = document.getElementsByClassName("accordion-group__accordion");
-    var i;
+    const filterAccordion = document.querySelectorAll(".filter-group__accordion");
+    filterAccordion.forEach(element => element.addEventListener('click', openAccordionFilter, false));
 
-    for (i = 0; i < answerAccordion.length; i++) {
-        answerAccordion[i].addEventListener("click", function() {
-            this.classList.toggle("accordion-group__accordion_active");
-            var answer = this.nextElementSibling;
-            if (answer.style.display === "block") {
-                answer.style.display = "none";
-            } else {
-                answer.style.display = "block";
-            }
-        });
-    }
-    var filterAccordion = document.getElementsByClassName("filter-group__accordion");
+function openAccordionFilter() {
+    this.classList.toggle("filter-group__accordion_open");
+}
 
 
-    for (i = 0; i < filterAccordion.length; i++) {
-        filterAccordion[i].addEventListener("click", function() {
-            this.classList.toggle("filter-group__accordion_open");
-            var answer = this.nextElementSibling;
-            if (answer.style.display === "block") {
-                answer.style.display = "none";
-            } else {
-                answer.style.display = "block";
-            }
-        });
-    }
+    const filterToggle =  document.querySelectorAll(".filter__toggle");
 
-    var filterToggle = document.getElementsByClassName("filter__toggle");
-
-
-    for (i = 0; i <  filterToggle.length; i++) {
-        filterToggle[i].addEventListener("click", function() {
-
-            var answer = this.nextElementSibling;
-            if (answer.style.display === "block") {
-                answer.style.display = "none";
-            } else {
-                answer.style.display = "block";
-            }
-        });
-    }
+    filterToggle.forEach(element => element.addEventListener('click',function () {
+        this.classList.toggle("filter_open");
+    },false));
