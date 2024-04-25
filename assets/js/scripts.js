@@ -141,6 +141,34 @@
 
 
             });
+            new Swiper(".maining__slider_most-like",{
+                spaceBetween:20,
+                loop:true,
+                slidesPerView: 4,
+                breakpoints: {
+                    1280:{
+                        slidesPerView: 4,
+                    },
+
+                    768:{
+                        slidesPerView: 2,
+
+                    },
+                    480:{
+                        slidesPerView: 2,
+                    },
+                    0:{
+                        slidesPerView: 2,
+                    }
+                },
+                navigation: {
+                    nextEl: '.maining__slider_most-profitable-next',
+                    prevEl: '.maining__slider_most-profitable-prev',
+                },
+
+
+
+            });
             new Swiper(".case-slider_slider",{
                 loop:true,
                spaceBetween:40,
@@ -341,3 +369,18 @@ function openAccordionFilter() {
     filterToggle.forEach(element => element.addEventListener('click',function () {
         this.classList.toggle("filter_open");
     },false));
+
+
+
+    const tabsLinks =  document.querySelectorAll(".tab__links");
+    tabsLinks.forEach(element => element.addEventListener('click',function () {
+        this.classList.toggle("tab__links_active");
+    },false));
+
+    function openTab(tabName) {
+
+        const tabs = document.querySelectorAll(".tab__content");
+        tabs.forEach(element => element.classList.remove("tab__content_active"));
+        tabsLinks.forEach(element => element.classList.remove("tab__links_active"));
+        document.getElementById(tabName).classList.toggle('tab__content_active');
+    }
