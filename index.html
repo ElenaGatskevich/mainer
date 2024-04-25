@@ -183,12 +183,10 @@
         <ul class="menu-horizont">
             <li class="menu-horizont__item menu-horizont__item_blue parent">
 
-                   <!-- <span class="menu-horizont__open">
-						<img src="image/category.svg" loading="lazy" width="14" height="14" alt="">
-					 </span>-->
+
 					<span class="menu-horizont__link" >Каталог</span>
 
-
+<div >
                     <ul class="menu-horizont__child dropdown-menu child-level1">
                     <li class="dropdown-menu__item">
 
@@ -201,9 +199,7 @@
                     <li class="dropdown-menu__item parent">
 
                         <a class="dropdown-menu__link" href="/">  Категория 2</a>
-                       <!-- <span class="menu-horizont__open-level2">
-						<img src="image/arrow.svg" loading="lazy" width="16" height="16" alt="">
-					    </span>-->
+
                        <ul class="dropdown-menu child-level2">
                            <li class="dropdown-menu__item">
 
@@ -231,9 +227,7 @@
                                <a href="/" class="dropdown-menu__link">
                                    Подкатегория 4
                                </a>
-                              <!-- <span class="menu-horizont__open-level3">
-						<img src="image/arrow.svg" loading="lazy" width="16" height="16" alt="">
-					    </span>-->
+
 
 
                                <ul class="dropdown-menu child-level3">
@@ -305,7 +299,7 @@
                         </a>
                     </li>
                 </ul>
-
+</div>
 
             </li>
             <li class="menu-horizont__item">
@@ -415,13 +409,15 @@
                 <form action="/" class="form form-main">
                     <div class="form__group">
                         <label for="name" class="form__label form__label_grey">Ваше имя</label>
-                        <input type="text"  name="name" class="form__input form__input_white" value="Вячеслав">
+                        <input type="text"  name="name" class="form__input form__input_white" value="">
                     </div>
                     <div class="form__group">
                         <label for="phone"  class="form__label form__label_grey">Ваш номер телефона</label>
-                        <input type="text"  name="phone" class="form__input form__input_white" value="+7 (999) 123-34-67">
+                        <input type="text"  name="phone" class="form__input form__input_white" value="">
                     </div>
+                    <div class="form__input_border">
                     <button class="form__input form__input-main">Отправить</button>
+                    </div>
                     <div class="form__checkbox checkbox">
 
                         <input type="checkbox" class="checkbox__input" id="mainform-checkbox" value="yes">
@@ -517,34 +513,34 @@
         <div class="swiper  brand__swiper">
         <div class="brand__list swiper-wrapper">
             <div class="brand__item swiper-slide">
-<img src="assets/images/b1.png" alt="">
+<img src="assets/images/b1.png" alt="" width="148" height="19">
             </div>
             <div class="brand__item swiper-slide">
-                <img src="assets/images/b2.png" alt="">
+                <img src="assets/images/b2.png" alt="" width="163" height="40">
             </div>
             <div class="brand__item swiper-slide">
-                <img src="assets/images/b3.png" alt="">
+                <img src="assets/images/b3.png" alt="" width="196" height="48">
             </div>
             <div class="brand__item swiper-slide">
-                <img src="assets/images/b4.png" alt="">
+                <img src="assets/images/b4.png" alt="" width="110" height="34">
             </div>
             <div class="brand__item swiper-slide">
-                <img src="assets/images/b5.png" alt="">
+                <img src="assets/images/b5.png" alt="" width="143" height="19">
             </div>
             <div class="brand__item swiper-slide">
-                <img src="assets/images/b6.png" alt="">
+                <img src="assets/images/b6.png" alt="" width="170" height="40">
             </div>
             <div class="brand__item swiper-slide">
-                <img src="assets/images/b7.png" alt="">
+                <img src="assets/images/b7.png" alt="" width="125" height="35">
             </div>
             <div class="brand__item swiper-slide">
-                <img src="assets/images/b8.png" alt="">
+                <img src="assets/images/b8.png" alt="" width="178" height="19">
             </div>
             <div class="brand__item swiper-slide">
-                <img src="assets/images/b9.png" alt="">
+                <img src="assets/images/b9.png" alt="" width="145" height="43">
             </div>
             <div class="brand__item swiper-slide">
-                <img src="assets/images/b10.png" alt="">
+                <img src="assets/images/b10.png" alt="" width="136" height="59">
             </div>
         </div>
             <!-- If we need navigation buttons -->
@@ -561,28 +557,31 @@
         <div class="swiper maining__slider">
             <div class="swiper-wrapper maining__row">
                 <div class="swiper-slide maining__item">
+                    <a href="#">
                     <div class="maining__images swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
+                                <img src="assets/images/maining.png" alt width="320" height="290">
 
                             </div>
                             <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
+                                <img src="assets/images/maining.png" alt width="320" height="290">
                             </div>
                             <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
+                                <img src="assets/images/maining.png" alt width="320" height="290">
                             </div>
                             <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
+                                <img src="assets/images/maining.png" alt width="320" height="290">
                             </div>
                         </div>
                         <div class="swiper-pagination maining__images_pagination"></div>
                         <div class="in-ctock">В наличии</div>
                     </div>
+                    </a>
                     <div class="maining__wrap">
                     <div class="maining__price">275 365 ₽/шт</div>
-                    <div class="maining__name">Bitmain Antminer S19 Pro</div>
+
+                        <div class="maining__name"><a href="" class="maining__name">Bitmain Antminer S19 Pro</a></div>
                      <ul class="maining__properties">
                          <li>Алгоритм майнинга — SHA-256</li>
                          <li>  Хешрейт — 110 TH/s</li>
@@ -596,79 +595,184 @@
                     </div>
                 </div>
                 <div class="swiper-slide maining__item">
-                    <div class="maining__images swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
+                    <a href="#">
+                        <div class="maining__images swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
                             </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
+                            <div class="swiper-pagination maining__images_pagination"></div>
+                            <div class="in-ctock">В наличии</div>
                         </div>
-                        <div class="swiper-pagination maining__images_pagination"></div>
+                    </a>
+                    <div class="maining__wrap">
+                        <div class="maining__price">275 365 ₽/шт</div>
+
+                        <div class="maining__name"><a href="" class="maining__name">Bitmain Antminer S19 Pro Bitmain Antminer S19 Pro Bitmain Antminer S19 Pro</a></div>
+                        <ul class="maining__properties">
+                            <li>Алгоритм майнинга — SHA-256</li>
+                            <li>  Хешрейт — 110 TH/s</li>
+                            <li>  Энергопотребление — 3500</li>
+                            <li>  Энергоэффективность — 32</li>
+                        </ul>
+                        <div class="maining__buttons">
+                            <button class="maining__order" aria-label="Корзина" data-fancybox data-src="#modal-product"><img src="assets/images/order.svg" alt width="22" height="22">Заказать</button>
+                            <button class="maining__cart" aria-label="Корзина" data-fancybox data-src="#modal-product"></button>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide maining__item">
-                    <div class="maining__images swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
+                    <a href="#">
+                        <div class="maining__images swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+
+                                </div>
+
                             </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
+                            <div class="swiper-pagination maining__images_pagination"></div>
+                            <div class="in-ctock">В наличии</div>
                         </div>
-                        <div class="swiper-pagination maining__images_pagination"></div>
+                    </a>
+                    <div class="maining__wrap">
+                        <div class="maining__price">275 365 ₽/шт</div>
+
+                        <div class="maining__name"><a href="" class="maining__name">Bitmain Antminer S19 Pro</a></div>
+                        <ul class="maining__properties">
+                            <li>Алгоритм майнинга — SHA-256</li>
+                            <li>  Хешрейт — 110 TH/s</li>
+                            <li>  Энергопотребление — 3500</li>
+                            <li>  Энергоэффективность — 32</li>
+                        </ul>
+                        <div class="maining__buttons">
+                            <button class="maining__order" aria-label="Корзина" data-fancybox data-src="#modal-product"><img src="assets/images/order.svg" alt width="22" height="22">Заказать</button>
+                            <button class="maining__cart" aria-label="Корзина" data-fancybox data-src="#modal-product"></button>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide maining__item">
-                    <div class="maining__images swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
+                    <a href="#">
+                        <div class="maining__images swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
                             </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
+                            <div class="swiper-pagination maining__images_pagination"></div>
+                            <div class="in-ctock">В наличии</div>
                         </div>
-                        <div class="swiper-pagination maining__images_pagination"></div>
+                    </a>
+                    <div class="maining__wrap">
+                        <div class="maining__price">275 365 ₽/шт</div>
+
+                        <div class="maining__name"><a href="" class="maining__name">Bitmain Antminer S19 Pro</a></div>
+
+                        <div class="maining__buttons">
+                            <button class="maining__order" aria-label="Корзина" data-fancybox data-src="#modal-product"><img src="assets/images/order.svg" alt width="22" height="22">Заказать</button>
+                            <button class="maining__cart" aria-label="Корзина" data-fancybox data-src="#modal-product"></button>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide maining__item">
-                    <div class="maining__images swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
+                    <a href="#">
+                        <div class="maining__images swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
                             </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
+                            <div class="swiper-pagination maining__images_pagination"></div>
+                            <div class="in-ctock">В наличии</div>
                         </div>
-                        <div class="swiper-pagination maining__images_pagination"></div>
+                    </a>
+                    <div class="maining__wrap">
+                        <div class="maining__price">275 365 000 000 ₽/шт</div>
+
+                        <div class="maining__name"><a href="" class="maining__name">Bitmain Antminer S19 Pro</a></div>
+                        <ul class="maining__properties">
+                            <li>Алгоритм майнинга — SHA-256</li>
+                            <li>  Хешрейт — 110 TH/s</li>
+                            <li>  Энергопотребление — 3500</li>
+                            <li>  Энергоэффективность — 32</li>
+                        </ul>
+                        <div class="maining__buttons">
+                            <button class="maining__order" aria-label="Корзина" data-fancybox data-src="#modal-product"><img src="assets/images/order.svg" alt width="22" height="22">Заказать</button>
+                            <button class="maining__cart" aria-label="Корзина" data-fancybox data-src="#modal-product"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide maining__item">
+                    <a href="#">
+                        <div class="maining__images swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination maining__images_pagination"></div>
+                            <div class="in-ctock">В наличии</div>
+                        </div>
+                    </a>
+                    <div class="maining__wrap">
+                        <div class="maining__price">275 365 ₽/шт</div>
+
+                        <div class="maining__name"><a href="" class="maining__name">Bitmain Antminer S19 Pro</a></div>
+                        <ul class="maining__properties">
+                            <li>Алгоритм майнинга — SHA-256</li>
+                            <li>  Хешрейт — 110 TH/s</li>
+                            <li>  Энергопотребление — 3500</li>
+                            <li>  Энергоэффективность — 32</li>
+                            <li>Алгоритм майнинга — SHA-256</li>
+                            <li>  Хешрейт — 110 TH/s</li>
+                            <li>Алгоритм майнинга — SHA-256</li>
+
+                        </ul>
+                        <div class="maining__buttons">
+                            <button class="maining__order" aria-label="Корзина" data-fancybox data-src="#modal-product"><img src="assets/images/order.svg" alt width="22" height="22">Заказать</button>
+                            <button class="maining__cart" aria-label="Корзина" data-fancybox data-src="#modal-product"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -694,17 +798,19 @@
         <form action="/" class="form form-main">
             <div class="form__group">
                 <label for="name" class="form__label form__label_grey">Ваше имя</label>
-                <input type="text"  name="name" class="form__input form__input_white" value="Вячеслав">
+                <input type="text"  name="name" class="form__input form__input_white" value="">
             </div>
             <div class="form__group">
                 <label for="phone"  class="form__label form__label_grey">Ваш номер телефона</label>
-                <input type="text"  name="phone" class="form__input form__input_white" value="+7 (999) 123-34-67">
+                <input type="text"  name="phone" class="form__input form__input_white" value="">
             </div>
-            <button class="form__input form__input-main">Отправить</button>
+            <div class="form__input_border">
+                <button class="form__input form__input-main">Отправить</button>
+            </div>
             <div class="form__checkbox checkbox">
 
-                <input type="checkbox" class="checkbox__input" id="checkbox" value="yes">
-                <label for="checkbox">Даю согласие на обработку своих персональных данных в соответсвиии с законом</label>
+                <input type="checkbox" class="checkbox__input" id="mainform-checkbox" value="yes">
+                <label for="mainform-checkbox">Даю согласие на обработку своих персональных данных в соответсвиии с законом</label>
 
             </div>
         </form>
@@ -719,8 +825,8 @@
         <div class="swiper case-slider case-slider_slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide case-slider__slide">
-                    <div class="case-slider__image"><img src="assets/images/case1.png" alt width="400" height="231"> </div>
-                    <div class="case-slider__name">Великая награда всех времён и народов</div>
+                    <div class="case-slider__image"><a href=""><img src="assets/images/case1.png" alt width="400" height="231"></a> </div>
+                    <div ><a href="" class="case-slider__name">Великая награда всех времён и народов</a></div>
                     <div class="case-slider__link">
                         <a href="#">Подробнее</a>
                     </div>
@@ -840,28 +946,31 @@
         <div class="swiper maining__slider maining__slider_most-profitable">
             <div class="swiper-wrapper maining__row">
                 <div class="swiper-slide maining__item">
-                    <div class="maining__images swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
+                    <a href="#">
+                        <div class="maining__images swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
 
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
                             </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
+                            <div class="swiper-pagination maining__images_pagination"></div>
+                            <div class="in-ctock">В наличии</div>
                         </div>
-                        <div class="swiper-pagination maining__images_pagination"></div>
-                        <div class="in-ctock">В наличии</div>
-                    </div>
+                    </a>
                     <div class="maining__wrap">
                         <div class="maining__price">275 365 ₽/шт</div>
-                        <div class="maining__name">Bitmain Antminer S19 Pro</div>
+
+                        <div class="maining__name"><a href="" class="maining__name">Bitmain Antminer S19 Pro</a></div>
                         <ul class="maining__properties">
                             <li>Алгоритм майнинга — SHA-256</li>
                             <li>  Хешрейт — 110 TH/s</li>
@@ -869,85 +978,190 @@
                             <li>  Энергоэффективность — 32</li>
                         </ul>
                         <div class="maining__buttons">
-                            <button class="maining__order" aria-label="Корзина" data-fancybox data-src="#modal-product"><img src="assets/images/order.svg" alt="" width="22" height="22">Заказать</button>
+                            <button class="maining__order" aria-label="Корзина" data-fancybox data-src="#modal-product"><img src="assets/images/order.svg" alt width="22" height="22">Заказать</button>
                             <button class="maining__cart" aria-label="Корзина" data-fancybox data-src="#modal-product"></button>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide maining__item">
-                    <div class="maining__images swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
+                    <a href="#">
+                        <div class="maining__images swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
                             </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
+                            <div class="swiper-pagination maining__images_pagination"></div>
+                            <div class="in-ctock">В наличии</div>
                         </div>
-                        <div class="swiper-pagination maining__images_pagination"></div>
+                    </a>
+                    <div class="maining__wrap">
+                        <div class="maining__price">275 365 ₽/шт</div>
+
+                        <div class="maining__name"><a href="" class="maining__name">Bitmain Antminer S19 Pro Bitmain Antminer S19 Pro Bitmain Antminer S19 Pro</a></div>
+                        <ul class="maining__properties">
+                            <li>Алгоритм майнинга — SHA-256</li>
+                            <li>  Хешрейт — 110 TH/s</li>
+                            <li>  Энергопотребление — 3500</li>
+                            <li>  Энергоэффективность — 32</li>
+                        </ul>
+                        <div class="maining__buttons">
+                            <button class="maining__order" aria-label="Корзина" data-fancybox data-src="#modal-product"><img src="assets/images/order.svg" alt width="22" height="22">Заказать</button>
+                            <button class="maining__cart" aria-label="Корзина" data-fancybox data-src="#modal-product"></button>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide maining__item">
-                    <div class="maining__images swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
+                    <a href="#">
+                        <div class="maining__images swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+
+                                </div>
+
                             </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
+                            <div class="swiper-pagination maining__images_pagination"></div>
+                            <div class="in-ctock">В наличии</div>
                         </div>
-                        <div class="swiper-pagination maining__images_pagination"></div>
+                    </a>
+                    <div class="maining__wrap">
+                        <div class="maining__price">275 365 ₽/шт</div>
+
+                        <div class="maining__name"><a href="" class="maining__name">Bitmain Antminer S19 Pro</a></div>
+                        <ul class="maining__properties">
+                            <li>Алгоритм майнинга — SHA-256</li>
+                            <li>  Хешрейт — 110 TH/s</li>
+                            <li>  Энергопотребление — 3500</li>
+                            <li>  Энергоэффективность — 32</li>
+                        </ul>
+                        <div class="maining__buttons">
+                            <button class="maining__order" aria-label="Корзина" data-fancybox data-src="#modal-product"><img src="assets/images/order.svg" alt width="22" height="22">Заказать</button>
+                            <button class="maining__cart" aria-label="Корзина" data-fancybox data-src="#modal-product"></button>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide maining__item">
-                    <div class="maining__images swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
+                    <a href="#">
+                        <div class="maining__images swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
                             </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
+                            <div class="swiper-pagination maining__images_pagination"></div>
+                            <div class="in-ctock">В наличии</div>
                         </div>
-                        <div class="swiper-pagination maining__images_pagination"></div>
+                    </a>
+                    <div class="maining__wrap">
+                        <div class="maining__price">275 365 ₽/шт</div>
+
+                        <div class="maining__name"><a href="" class="maining__name">Bitmain Antminer S19 Pro</a></div>
+
+                        <div class="maining__buttons">
+                            <button class="maining__order" aria-label="Корзина" data-fancybox data-src="#modal-product"><img src="assets/images/order.svg" alt width="22" height="22">Заказать</button>
+                            <button class="maining__cart" aria-label="Корзина" data-fancybox data-src="#modal-product"></button>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide maining__item">
-                    <div class="maining__images swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
+                    <a href="#">
+                        <div class="maining__images swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
                             </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
-                            <div class="swiper-slide maining_image">
-                                <img src="assets/images/maining.png" alt>
-                            </div>
+                            <div class="swiper-pagination maining__images_pagination"></div>
+                            <div class="in-ctock">В наличии</div>
                         </div>
-                        <div class="swiper-pagination maining__images_pagination"></div>
+                    </a>
+                    <div class="maining__wrap">
+                        <div class="maining__price">275 365 000 000 ₽/шт</div>
+
+                        <div class="maining__name"><a href="" class="maining__name">Bitmain Antminer S19 Pro</a></div>
+                        <ul class="maining__properties">
+                            <li>Алгоритм майнинга — SHA-256</li>
+                            <li>  Хешрейт — 110 TH/s</li>
+                            <li>  Энергопотребление — 3500</li>
+                            <li>  Энергоэффективность — 32</li>
+                        </ul>
+                        <div class="maining__buttons">
+                            <button class="maining__order" aria-label="Корзина" data-fancybox data-src="#modal-product"><img src="assets/images/order.svg" alt width="22" height="22">Заказать</button>
+                            <button class="maining__cart" aria-label="Корзина" data-fancybox data-src="#modal-product"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide maining__item">
+                    <a href="#">
+                        <div class="maining__images swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
+                                <div class="swiper-slide maining_image">
+                                    <img src="assets/images/maining.png" alt width="320" height="290">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination maining__images_pagination"></div>
+                            <div class="in-ctock">В наличии</div>
+                        </div>
+                    </a>
+                    <div class="maining__wrap">
+                        <div class="maining__price">275 365 ₽/шт</div>
+
+                        <div class="maining__name"><a href="" class="maining__name">Bitmain Antminer S19 Pro</a></div>
+                        <ul class="maining__properties">
+                            <li>Алгоритм майнинга — SHA-256</li>
+                            <li>  Хешрейт — 110 TH/s</li>
+                            <li>  Энергопотребление — 3500</li>
+                            <li>  Энергоэффективность — 32</li>
+                            <li>Алгоритм майнинга — SHA-256</li>
+                            <li>  Хешрейт — 110 TH/s</li>
+                            <li>Алгоритм майнинга — SHA-256</li>
+
+                        </ul>
+                        <div class="maining__buttons">
+                            <button class="maining__order" aria-label="Корзина" data-fancybox data-src="#modal-product"><img src="assets/images/order.svg" alt width="22" height="22">Заказать</button>
+                            <button class="maining__cart" aria-label="Корзина" data-fancybox data-src="#modal-product"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -969,12 +1183,12 @@
         <div class="accordion-group">
             <h3 class="accordion-group__title">ЗАГОЛОВОК ДЛЯ ВОПРОСА</h3>
             <div class="accordion-group__accordion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt?</div>
-            <div class="accordion-group__answer accordion-group__answer_close">
+            <div class="accordion-group__answer">
                 Lorem ipsum dolor sit amet consectetur. Dignissim neque in tellus neque est vel non id vulputate. Odio auctor est vitae neque. Purus at nunc quam pretium malesuada eget volutpat a. Vel vulputate faucibus augue orci fermentum. Habitant vitae euismod egestas viverra tincidunt cursus ac a eget. Vitae enim lectus integer nisl purus. Tristique sed cursus sed et tristique phasellus.
                 Nunc feugiat volutpat integer pulvinar sed in quisque eget ultricies. Ultrices ipsum viverra tristique egestas ipsum leo vestibulum. Malesuada sed imperdiet quis aenean tortor magna neque ultricies mauris. Tincidunt eget egestas in sed dictumst nisl condimentum. Sit nulla cursus amet vitae mauris pharetra aliquam non.
             </div>
             <div class="accordion-group__accordion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt?</div>
-            <div class="accordion-group__answer accordion-group__answer_close">
+            <div class="accordion-group__answer">
                 Lorem ipsum dolor sit amet consectetur. Dignissim neque in tellus neque est vel non id vulputate. Odio auctor est vitae neque. Purus at nunc quam pretium malesuada eget volutpat a. Vel vulputate faucibus augue orci fermentum. Habitant vitae euismod egestas viverra tincidunt cursus ac a eget. Vitae enim lectus integer nisl purus. Tristique sed cursus sed et tristique phasellus.
                 Nunc feugiat volutpat integer pulvinar sed in quisque eget ultricies. Ultrices ipsum viverra tristique egestas ipsum leo vestibulum. Malesuada sed imperdiet quis aenean tortor magna neque ultricies mauris. Tincidunt eget egestas in sed dictumst nisl condimentum. Sit nulla cursus amet vitae mauris pharetra aliquam non.
             </div>
@@ -982,7 +1196,7 @@
         <div class="accordion-group">
             <h3 class="accordion-group__title">ЗАГОЛОВОК ДЛЯ ВОПРОСА</h3>
             <div class="accordion-group__accordion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt?</div>
-            <div class="accordion-group__answer accordion-group__answer_close">
+            <div class="accordion-group__answer">
                 Lorem ipsum dolor sit amet consectetur. Dignissim neque in tellus neque est vel non id vulputate. Odio auctor est vitae neque. Purus at nunc quam pretium malesuada eget volutpat a. Vel vulputate faucibus augue orci fermentum. Habitant vitae euismod egestas viverra tincidunt cursus ac a eget. Vitae enim lectus integer nisl purus. Tristique sed cursus sed et tristique phasellus.
                 Nunc feugiat volutpat integer pulvinar sed in quisque eget ultricies. Ultrices ipsum viverra tristique egestas ipsum leo vestibulum. Malesuada sed imperdiet quis aenean tortor magna neque ultricies mauris. Tincidunt eget egestas in sed dictumst nisl condimentum. Sit nulla cursus amet vitae mauris pharetra aliquam non.
             </div>
@@ -995,19 +1209,46 @@
         <div class="accordion-group">
             <h3 class="accordion-group__title">ЗАГОЛОВОК ДЛЯ ВОПРОСА</h3>
             <div class="accordion-group__accordion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt?</div>
-            <div class="accordion-group__answer accordion-group__answer_close">
+            <div class="accordion-group__answer">
                 Lorem ipsum dolor sit amet consectetur. Dignissim neque in tellus neque est vel non id vulputate. Odio auctor est vitae neque. Purus at nunc quam pretium malesuada eget volutpat a. Vel vulputate faucibus augue orci fermentum. Habitant vitae euismod egestas viverra tincidunt cursus ac a eget. Vitae enim lectus integer nisl purus. Tristique sed cursus sed et tristique phasellus.
                 Nunc feugiat volutpat integer pulvinar sed in quisque eget ultricies. Ultrices ipsum viverra tristique egestas ipsum leo vestibulum. Malesuada sed imperdiet quis aenean tortor magna neque ultricies mauris. Tincidunt eget egestas in sed dictumst nisl condimentum. Sit nulla cursus amet vitae mauris pharetra aliquam non.
             </div>
             <div class="accordion-group__accordion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt?</div>
-            <div class="accordion-group__answer accordion-group__answer_close">
+            <div class="accordion-group__answer">
                 Lorem ipsum dolor sit amet consectetur. Dignissim neque in tellus neque est vel non id vulputate. Odio auctor est vitae neque. Purus at nunc quam pretium malesuada eget volutpat a. Vel vulputate faucibus augue orci fermentum. Habitant vitae euismod egestas viverra tincidunt cursus ac a eget. Vitae enim lectus integer nisl purus. Tristique sed cursus sed et tristique phasellus.
                 Nunc feugiat volutpat integer pulvinar sed in quisque eget ultricies. Ultrices ipsum viverra tristique egestas ipsum leo vestibulum. Malesuada sed imperdiet quis aenean tortor magna neque ultricies mauris. Tincidunt eget egestas in sed dictumst nisl condimentum. Sit nulla cursus amet vitae mauris pharetra aliquam non.
             </div>
         </div>
     </div>
 </section>
+<section class="main-text main-text_person">
+    <div class="container">
 
+        <div class="main-text__row">
+            <div class="main-text__image">
+                <img src="assets/images/560560.png" alt width="560" height="560">
+            </div>
+            <div class="main-text__content main-text__content_person">
+                <h3 class="main-title main-title_white main-title_person">Иван ИВанов</h3>
+
+                <div class="main-text__text">
+                    <ol class="main-text_numbered numbered">
+                        <li> Lorem ipsum dolor sit amet consectetur</li>
+                        <li> Lorem ipsum dolor sit amet consectetur</li>
+                        <li> Lorem ipsum dolor sit amet consectetur</li>
+                        <li> Lorem ipsum dolor sit amet consectetur</li>
+                        <li> Lorem ipsum dolor sit amet consectetur</li>
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</section>
 <section class="main-text">
 <div class="container">
     <h2 class="main-title main-title_white">Lorem Ipsum</h2>
@@ -1051,17 +1292,19 @@
             <form action="/" class="form form-main">
                 <div class="form__group">
                     <label for="name" class="form__label form__label_grey">Ваше имя</label>
-                    <input type="text" name="name" class="form__input form__input_white" value="Вячеслав">
+                    <input type="text"  name="name" class="form__input form__input_white" value="">
                 </div>
                 <div class="form__group">
-                    <label for="phone" class="form__label form__label_grey">Ваш номер телефона</label>
-                    <input type="text" name="phone" class="form__input form__input_white" value="+7 (999) 123-34-67">
+                    <label for="phone"  class="form__label form__label_grey">Ваш номер телефона</label>
+                    <input type="text"  name="phone" class="form__input form__input_white" value="">
                 </div>
-                <button class="form__input form__input-main">Отправить</button>
+                <div class="form__input_border">
+                    <button class="form__input form__input-main">Отправить</button>
+                </div>
                 <div class="form__checkbox checkbox">
 
-                    <input type="checkbox" class="checkbox__input" id="checkbox-bottom" value="yes">
-                    <label for="checkbox-bottom">Даю согласие на обработку своих персональных данных в соответсвиии с законом</label>
+                    <input type="checkbox" class="checkbox__input" id="mainform-checkbox" value="yes">
+                    <label for="mainform-checkbox">Даю согласие на обработку своих персональных данных в соответсвиии с законом</label>
 
                 </div>
             </form>
