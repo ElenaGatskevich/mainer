@@ -263,8 +263,37 @@
                 },
 
             });
-           const main= new Swiper(".images__main",{
+            new Swiper(".massmedia-slider",{
+                loop:true,
+                spaceBetween:20,
 
+                breakpoints: {
+                    1280:{
+                        slidesPerView: 4,
+                    },
+                    768:{
+                        slidesPerView: 4,
+                        spaceBetween:15
+                    },
+                    480:{
+                        slidesPerView: "auto",
+                    },
+                    0:{
+                        slidesPerView: "auto",
+                    }
+                },
+                slidesPerView: 3,
+                navigation: {
+                    nextEl: '.massmedia-slider__next',
+                    prevEl: '.massmedia-slider__prev',
+                },
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+
+            });
+           const main= new Swiper(".images__main",{
+                 loop:true,
                 slidesPerView: 1,
 
 
@@ -305,6 +334,50 @@
 
 
             });
+
+
+            const mainAbout= new Swiper(".about__main",{
+loop:true,
+                slidesPerView: 1,
+
+
+            });
+
+            const thumbAbout=new Swiper(".about__thumbs",{
+
+                loop:true,
+                centeredSlidesBounds: true,
+
+                spaceBetween: 10,
+
+
+                breakpoints: {
+                    1280:{
+                        slidesPerView: 4,
+                    },
+                    769:{
+                        slidesPerView:4,
+
+                    },
+
+                    0:{
+                        spaceBetween: 5,
+                        slidesPerView: 4,
+
+                    }
+                },
+
+                slidesPerView: 4,
+                navigation: {
+                    nextEl: '.about-prev',
+                    prevEl: '.about-next',
+                },
+                thumbs:{
+                    swiper:mainAbout,
+                }
+
+
+            });
         }
 
     ));
@@ -320,22 +393,27 @@ const drop = document.querySelectorAll('.dropdown-menu');
     parentMobile.forEach(element => element.addEventListener('click', openMenu, false));
 /* Это для меню по ховеру */
 function hideDrop() {
+    console.log('1111');
     this.classList.remove("dropdown-menu_active");
-    this.parentNode.classList.remove("parent_open");
+    //this.parentNode.classList.remove("parent_open");
     this.parentNode.classList.remove("parent_open_drop");
-    this.classList.remove("menu-horizont__child-border");
+   // this.classList.remove("menu-horizont__child-border");
 }
 function showDrop() {
+    console.log('2222');
     this.parentNode.classList.add("parent_open_drop");
 }
 function showChild() {
+    console.log('3333');
         this.children[1].classList.add("dropdown-menu_active");
         this.classList.add("parent_open");
         this.parentNode.classList.add("menu-horizont__child-border");
 
 }
 function hideChild() {
-    setTimeout(() => this.classList.remove("parent_open"), 1000);
+    console.log('1111');
+    this.classList.remove("parent_open");
+    this.parentNode.classList.remove("menu-horizont__child-border");
 }
 /**/
 
