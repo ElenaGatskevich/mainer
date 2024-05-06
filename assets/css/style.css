@@ -2004,10 +2004,10 @@ background: url("../images/1.webp") bottom right no-repeat #363A3E;
 
 }
 .main-slider__slide_two_catalog{
-    background: url("../images/2cat.png") bottom right no-repeat #363A3E;
+    background: url("../images/2cat.webp") bottom right no-repeat #363A3E;
 }
 .main-slider__slide_three{
-    background: url("../images/3.png") bottom right no-repeat #363A3E;
+    background: url("../images/3.webp") bottom right no-repeat #363A3E;
 ;
 }
 .main-slider__slide_four{
@@ -2755,10 +2755,12 @@ background: url("../images/thumbTop.svg") center center no-repeat #fff;
     border: 1px solid #00C65C;
 }
 .thumbs__item img{
-
+    object-fit: contain;
+    width: 100%;
 }
 .images__main img{
-
+    object-fit: contain;
+    width: 100%;
 }
 .images__main{
     max-width: 510px;
@@ -2915,7 +2917,7 @@ margin-right: 20px;
     line-height: 26.6px;
     letter-spacing: 0.05em;
     text-align: center;
-    background: url("../images/preorderfon.png") center center no-repeat,linear-gradient(360deg, rgba(254, 0, 0, 0.8) -54.93%, rgba(255, 204, 204, 0.8) 200.7%);
+    background: url("../images/preorderfon.webp") center center no-repeat,linear-gradient(360deg, rgba(254, 0, 0, 0.8) -54.93%, rgba(255, 204, 204, 0.8) 200.7%);
     padding: 24px 143px 24px 143px;
     margin-top: 20px;
     margin-bottom: 35px;
@@ -4223,11 +4225,11 @@ margin-bottom: 20px;
 
     }
     .images__main img {
-        max-width: 100%;
+
     }
     .thumbs__item img {
 
-        max-width: 60px;
+
     }
     .images__main{
         max-width: 100%;
