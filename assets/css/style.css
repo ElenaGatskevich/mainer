@@ -2,7 +2,8 @@
     font-family: Inter;
     font-style: normal;
     font-weight: 700;
-    src: url(../fonts/Inter-Bold.woff2) format("woff2")
+    src: url(../fonts/Inter-Bold.woff2) format("woff2");
+    font-display: swap;
 
 }
 
@@ -10,7 +11,8 @@
     font-family:Inter;
     font-style: normal;
     font-weight: 500;
-    src: url(../fonts/Inter-Medium.woff2) format("woff2")
+    src: url(../fonts/Inter-Medium.woff2) format("woff2");
+    font-display: swap;
 
 }
 
@@ -18,14 +20,16 @@
     font-family:Inter;
     font-style: normal;
     font-weight: 400;
-    src: url(../fonts/Inter-Regular.woff2) format("woff2")
+    src: url(../fonts/Inter-Regular.woff2) format("woff2");
+    font-display: swap;
 
 }
 @font-face {
     font-family:Inter;
     font-style: normal;
     font-weight:300;
-    src:url(../fonts/Inter-Light.woff2) format("woff2")
+    src:url(../fonts/Inter-Light.woff2) format("woff2");
+    font-display: swap;
 
 
 }
@@ -34,7 +38,8 @@
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
-    src: url(../fonts/Inter-SemiBold.woff2) format("woff2")
+    src: url(../fonts/Inter-SemiBold.woff2) format("woff2");
+    font-display: swap;
 
 }
 
@@ -43,30 +48,35 @@
     src: local('Bebas Neue Thin'), local('BebasNeue-Thin'), url('../fonts/bebasneuethin.woff2') format('woff2'), url('../fonts/bebasneuethin.woff') format('woff'), url('../fonts/bebasneuethin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Bebas Neue';
     src: local('Bebas Neue Light'), local('BebasNeue-Light'), url('../fonts/bebasneuelight.woff2') format('woff2'), url('../fonts/bebasneuelight.woff') format('woff'), url('../fonts/bebasneuelight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Bebas Neue';
     src: local('Bebas Neue Book'), local('BebasNeueBook'), url('../fonts/bebasneuebook.woff2') format('woff2'), url('../fonts/bebasneuebook.woff') format('woff'), url('../fonts/bebasneuebook.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Bebas Neue';
     src: local('Bebas Neue Regular'), local('BebasNeueRegular'), url('../fonts/bebasneueregular.woff2') format('woff2'), url('../fonts/bebasneueregular.woff') format('woff'), url('../fonts/bebasneueregular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Bebas Neue';
     src: local('Bebas Neue Bold'), local('BebasNeueBold'), url('../fonts/bebasneuebold.woff2') format('woff2'), url('../fonts/bebasneuebold.woff') format('woff'), url('../fonts/bebasneuebold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
 }
 
 
