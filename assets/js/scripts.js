@@ -421,12 +421,12 @@ function init() {
 
 
 
-            setTimeout(init, 100);
+            setTimeout(init, 10);
         }
 
     ));
     window.addEventListener('resize', (e) => {
-        setTimeout(init, 100);
+        setTimeout(init, 10);
     });
 
 const parent = document.querySelectorAll('.parent');
