@@ -170,6 +170,7 @@ function init() {
         },
         scrollbar: {
             el: '.swiper-scrollbar',
+            draggable: true,
         },
 
 
@@ -341,9 +342,11 @@ function init() {
         breakpoints: {
             1280: {
                 slidesPerView: 3,
+
             },
             769: {
                 slidesPerView: 3,
+                direction: "horizontal",
 
             },
 
@@ -373,11 +376,12 @@ function init() {
     });
 
 
+
     const thumbAbout = new Swiper(".about__thumbs", {
 
         loop: true,
-        centeredSlidesBounds: true,
 
+        freeMode: true,
         spaceBetween: 10,
 
 
@@ -398,22 +402,25 @@ function init() {
         },
 
         slidesPerView: 4,
+
+
+
+    });
+    const mainAbout = new Swiper(".about__main", {
+        loop: true,
+        slidesPerView: 1,
+        freeMode: true,
         navigation: {
             nextEl: '.about-prev',
             prevEl: '.about-next',
         },
-
-
-    });
-
-    const mainAbout = new Swiper(".about__main", {
-        loop: true,
-        slidesPerView: 1,
         thumbs: {
             swiper: thumbAbout,
         }
 
     });
+
+
 }
     document.addEventListener("DOMContentLoaded", (function () {
 
@@ -508,3 +515,9 @@ function openAccordionFilter() {
         tabsLinks.forEach(element => element.classList.remove("tab__links_active"));
         document.getElementById(tabName).classList.toggle('tab__content_active');
     }
+
+
+const tabCharacterictic =  document.querySelectorAll(".product__properties_link");
+tabCharacterictic.forEach(element => element.addEventListener('click',function () {
+   document.getElementById("all").click();
+},false));
